@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="regression">
+<parameter name="url" value="https://www.expedia.com/"></parameter>
+
+<test name="test1forchrome">
+<parameter name="browser" value="chrome"></parameter>
+<classes>
+<class name="Regression.Expedia_test"></class>
+</classes>
+</test>
+
+<test name="test2forfirefox">
+<parameter name="browser" value="firefox"></parameter>
+<classes>
+<class name="Regression.Expedia_test"></class>
+</classes>
+</test>
+
+<test name="test3foredge">
+<parameter name="browser" value="edge"></parameter>
+<classes>
+<class name="Regression.Expedia_test"></class>
+</classes>
+</test>
+
+</suite>
